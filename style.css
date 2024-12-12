@@ -1,132 +1,71 @@
-/* General body styling */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    color: #333;
-    text-align: center;
-}
-
-/* Main title */
-h1 {
-    font-size: 3rem;
-    color: #2c3e50;
-    margin-bottom: 20px;
-}
-
-/* Points section */
-p {
-    font-size: 1.5rem;
-    color: #34495e;
-    margin: 10px 0;
-}
-
-/* The clickable ball */
-#ball {
-    width: 120px;
-    height: 120px;
-    background-color: #e74c3c;
-    border-radius: 50%;
-    margin: 20px;
-    cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s ease-in-out;
-}
-
-/* Hover effect for the ball */
-#ball:hover {
-    transform: scale(1.1);
-}
-
-/* Points per click section */
-#pointsPerClick {
-    font-weight: bold;
-    color: #27ae60;
-}
-
-/* Buttons styling */
-button {
-    padding: 12px 24px;
-    font-size: 1.2rem;
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    margin: 10px;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #2980b9;
-}
-
-/* Upgrade section */
-h2 {
-    margin-top: 40px;
-    font-size: 2rem;
-    color: #2c3e50;
-}
-
-span {
-    font-size: 1.2rem;
-    color: #8e44ad;
-}
-
-/* Save and Load buttons styling */
-button#saveButton,
-button#loadButton {
-    background-color: #1abc9c;
-}
-
-button#saveButton:hover,
-button#loadButton:hover {
-    background-color: #16a085;
-}
-
-/* Section for the buttons to align them well */
-div {
-    margin: 20px 0;
-}
-
-/* Adding some spacing between the different elements */
-#ball, h2, button {
-    margin-top: 15px;
-}
-
-/* Responsive design for smaller screens */
-@media (max-width: 600px) {
-    h1 {
-        font-size: 2.5rem;
-    }
-
-    p, button, #pointsPerClick, #ball {
-        font-size: 1.2rem;
-    }
-
-    #ball {
-        width: 100px;
-        height: 100px;
-    }
-}
-
+/* Basic styling */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f9;
+}
+
+h1 {
+    margin: 20px;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* Prestige button */
+#prestigeButton {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background: gold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#prestigeButton:hover {
+    background: darkgoldenrod;
+}
+
+/* Ball clicker */
+#ballContainer {
+    margin: 20px auto;
+    text-align: center;
+}
+
+#clickBall {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.1s ease-in-out;
+}
+
+#clickBall:active {
+    transform: scale(0.9);
+}
+
+/* Upgrades container */
+#upgradesContainer {
+    margin-top: 20px;
 }
 
 button {
     margin: 5px;
     padding: 10px;
     font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-#upgradesContainer {
-    margin-top: 20px;
+button:hover {
+    background: #ddd;
+}
+
+span {
+    font-weight: bold;
 }
