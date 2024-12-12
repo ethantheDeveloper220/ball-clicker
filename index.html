@@ -4,33 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ball Clicker</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Ball Clicker</h1>
-    <p>Points: <span id="pointsCount">0</span></p>
-    <div id="ball"></div>
-    <p>Points Per Click: <span id="pointsPerClick">1</span></p>
-    <h2>Upgrades</h2>
-    <button id="buyBounce">Buy Bounce Upgrade (+5 PPC, Cost: 50)</button>
-    <span>Bounce Upgrades: <span id="bounceCount">0</span></span>
-    <h2>Save and Load</h2>
-    <button id="saveButton">Save Game</button>
-    <button id="loadButton">Load Game</button>
     <div>
-    <h1>Ball Clicker</h1>
-    <p>Points: <span id="pointsCount">0</span></p>
-    <p>Points Per Click: <span id="pointsPerClick">1</span></p>
-    <p>Points Per Second: <span id="pointsPerSecond">0</span></p>
-    <p>Prestige Count: <span id="prestigeCount">0</span></p>
-    <button id="prestigeButton" style="display: none;">Prestige (Requires 1,000,000 points)</button>
-</div>
+        <h1>Ball Clicker</h1>
+        <p>Points: <span id="pointsCount">0</span></p>
+        <p>Points Per Click: <span id="pointsPerClick">1</span></p>
+        <p>Points Per Second: <span id="pointsPerSecond">0</span></p>
+        <p>Prestige Count: <span id="prestigeCount">0</span></p>
+        <button id="prestigeButton" style="display: none;">Prestige (Requires 1,000,000 points)</button>
+    </div>
 
-<div id="upgradesContainer"></div>
+    <!-- Ball container -->
+    <div id="ballContainer">
+        <img id="clickBall" src="ball.png" alt="Click Ball">
+    </div>
 
-<button id="clickBall">Click Ball</button>
+    <!-- Upgrades container -->
+    <div id="upgradesContainer"></div>
 
-    <!-- Link to the JavaScript file -->
-    <script src="main.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
